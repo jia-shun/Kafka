@@ -34,7 +34,7 @@ public class ReceiveMessageConsumer {
 			ConsumerRecords<String, Integer> allRecorders = consumer.poll(200);
 			for (ConsumerRecord<String, Integer> record : allRecorders) {
 				System.out.println(
-						"key = " + record.key() + "、value = " + record.value());
+						"消息接收key = " + record.key() + "、value = " + record.value());
 			}
 		}
 		consumer.close();
