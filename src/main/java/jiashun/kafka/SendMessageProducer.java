@@ -26,7 +26,7 @@ public class SendMessageProducer {
 			producer.send(new ProducerRecord<String, Integer>(TOPIC, "jiashun-"+x,x));
 		}
 		long end = System.currentTimeMillis();
-		System.out.println("消息发送完成："+(end - start));
+		System.out.println("消息发送已经完成："+(end - start));
 		producer.close();
 	}
 }
